@@ -20,5 +20,4 @@
         </div>
     </div>
 </div>
-<p>Test</p>
 @endsection
