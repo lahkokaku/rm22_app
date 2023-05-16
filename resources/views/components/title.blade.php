@@ -1,0 +1,1 @@
+<h3 class="text-uppercase fw-bold   text-gradient mb-4" style="letter-spacing: 0.1em">{{$slot}} </h3>
