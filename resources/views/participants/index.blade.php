@@ -1,7 +1,7 @@
 <x-admin>
     <div class="container mt-4">
         <x-card>
-            <x-title>{{$competitions->name}}'s Participants</x-title>
+            <x-title>{{$competitions != NULL ? $competitions->name : 'All'}}'s Participants</x-title>
             <hr>
             @if ($participants->count())
             <div class="table-responsive py-2">
@@ -12,6 +12,7 @@
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Phone Number </th>
+                        <th scope="col">Competition</th>
                         <th scope="col">Action</th>
                     </tr>
                     </thead>
@@ -22,6 +23,7 @@
                             <td>{{$participant->name}}</td>
                             <td>{{$participant->email}}</td>
                             <td>{{$participant->phone_number}}</td>
+                            <td>{{$participant->competition->name}}</td>
                             <td class="d-flex justify-content-center"> 
                                  
 
