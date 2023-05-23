@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CompetitionController;
 use App\Http\Controllers\CompetitionParticipant;
 use App\Http\Controllers\CompetitionPaymentController;
@@ -39,9 +40,11 @@ Route::get('competition-registration/edit/{participantId}/{paymentId}', [Competi
 Route::put('competition-registration/update/{participantId}/{paymentId}', [CompetitionRegistrationController::class, 'update'])->name('competition-registrations.update');
 
 //Compet Participant
-Route::get('participants/{competitionId}', [CompetitionParticipantController::class, 'index'])->name('participants.index');
+Route::get('participants/{competitionId?}', [CompetitionParticipantController::class, 'index'])->name('participants.index');
  
 //Compet Payment
 Route::get('payments', [CompetitionPaymentController::class, 'index'])->name('payments.index');
 Route::get('payments/confirm/{paymentId}', [CompetitionPaymentController::class, 'confirm'])->name('payments.confirm');
 Route::get('payments/unConfirm/{paymentId}', [CompetitionPaymentController::class, 'unConfirm'])->name('payments.unconfirm');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboards.index');  
