@@ -17,7 +17,7 @@
   <body>
     
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-4 col-lg-3 me-0 px-3 text-center" href="#">Indonesian Youth Olympics </a>
+  <a class="navbar-brand col-md-4 col-lg-3 me-0 px-3 text-center" href="#">Competition Registration </a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -65,21 +65,30 @@
 
       {{-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> --}}
       <div class="row justify-content-center">
-            @foreach ($competitions as $competition )
-              <div class="col-md-6 overflow-hidden">
-                <x-card>
-                    <h4 class=" text-gradient">{{$competition->name}}'s <span class="fw-light">Total Participant</span></h4>
-                    <h1 class="display-6 fw-bold">300</h1>
-                    <div class="d-flex justify-content-end px-3 mb-1">
-                        <span style="font-size: 0.6em" class="fw-bold">300/675</span>
-                    </div>
-                    <div class="progress ">
-                        <div class="progress-bar" role="progressbar" style="width:{{300/675*100}}%;"   aria-valuemin="0" aria-valuemax="100"> </div>
-                    </div>
-                </x-card>
-              </div>  
-                
-            @endforeach
+        <div class="col-md-6 overflow-hidden">
+          <x-card>
+              <h4 class=" text-gradient">Spelling Bee's <span class="fw-light">Total Participant</span></h4>
+              <h1 class="display-6 fw-bold">46</h1>
+              <div class="d-flex justify-content-end px-3 mb-1">
+                  <span style="font-size: 0.6em" class="fw-bold">46/60</span>
+              </div>
+              <div class="progress ">
+                  <div class="progress-bar" role="progressbar" style="width:{{50/60*100}}%;"   aria-valuemin="0" aria-valuemax="100"> </div>
+              </div>
+          </x-card>
+        </div>
+        <div class="col-md-6 overflow-hidden">
+          <x-card>
+              <h4 class=" text-gradient">Speech's <span class="fw-light">Total Participant</span></h4>
+              <h1 class="display-6 fw-bold">39</h1>
+              <div class="d-flex justify-content-end px-3 mb-1">
+                  <span style="font-size: 0.6em" class="fw-bold">39/60</span>
+              </div>
+              <div class="progress ">
+                  <div class="progress-bar" role="progressbar" style="width:{{39/60*100}}%;"   aria-valuemin="0" aria-valuemax="100"> </div>
+              </div>
+          </x-card>
+        </div>
       </div>
        
     </main>
