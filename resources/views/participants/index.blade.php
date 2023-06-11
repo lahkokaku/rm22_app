@@ -22,7 +22,7 @@
                             <td>{{$participant->id}}</td>
                             <td>{{$participant->name}}</td>
                             <td>{{$participant->email}}</td>
-                            <td>{{$participant->phone_number}}</td>
+                            <td>+62-{{$participant->phone_number}}</td>
                             <td>{{$participant->competition->name}}</td>
                             <td class="d-flex justify-content-center"> 
                                  
