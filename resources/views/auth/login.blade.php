@@ -13,7 +13,7 @@
                                     </div>
                                     @csrf
                                     <div class="form-group mb-3">
-                                        <label class="col-form-label ms-1" for="email">Admin Email</label>
+                                        <label class="col-form-label ms-1" for="email">Email</label>
                                         <input type="text" class="form-control  @error('email') is-invalid @enderror"
                                             name="email" value="{{ old('email') }}" required>
                                         @error('email')
