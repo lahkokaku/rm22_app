@@ -9,5 +9,21 @@
 
 @import 'dashboard.scss';
 
- 
+ // Fonts
+@import url('https://fonts.bunny.net/css?family=lexend');
+@import url('https://fonts.bunny.net/css?family=roboto');
 
+// Variables
+@import 'variables';
+
+
+
+// External Style
+@import 'assets';
+@import 'home';
+
+
+// External Style
+@import 'style';
+@import 'sidebar';
+@import 'merch';

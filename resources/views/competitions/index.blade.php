@@ -1,4 +1,7 @@
 <x-admin>
+    <x-navbar />
+    <x-sidebar />
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div class="container mt-4">
 
         <x-card>
@@ -24,11 +27,11 @@
                                 <td>{{$competition->category}}</td>
                                 <td>{{$competition->price}}</td>
                                 <td class="d-flex justify-content-center"> 
-                                    <a href="{{route('participants.index', $competition->id)}}" class="btn btn-info btn-sm rounded me-2 " title="view">
+                                    <a href="{{route('participants.index', $competition->id)}}" class="btn btn-success btn-sm rounded me-2 " title="view">
                                         <i class="fa fa-eye"></i>
                                     </a>
 
-                                    <a href="{{route('competitions.edit', $competition->id)}}" class="btn btn-primary btn-sm rounded me-2 " title="edit">
+                                    <a href="{{route('competitions.edit', $competition->id)}}" class="btn btn-outline-dark-blue btn-sm rounded me-2 " title="edit">
                                         <i class="fa fa-edit"></i>
                                     </a>
                                     
@@ -36,7 +39,7 @@
                                         @csrf
                                         <input type="hidden" name="_method" value = "DELETE">
                                         <a  href=""  >
-                                        <button class="btn btn-danger rounded btn-sm" title="delete" id ="delete">
+                                        <button class="btn btn-outline-red rounded btn-sm" title="delete" id ="delete">
                                            <i class="fa fa-x"></i>
                                         </button>
                                         </a>
@@ -54,4 +57,5 @@
             @endif
         </x-card>
     </div>
+    </main>
 </x-admin>

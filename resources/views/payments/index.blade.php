@@ -1,4 +1,7 @@
 <x-admin>
+    <x-navbar />
+    <x-sidebar />
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div class="container mt-4">
         <x-card>
             <x-title>Unconfirmed Payment </x-title>
@@ -22,7 +25,7 @@
                             <td class="d-flex justify-content-center"> 
                                  
 
-                                <a href="{{route('competition-registrations.edit',[$payment->competition_participant_id,$payment->id])}}" class="btn btn-primary btn-sm rounded me-2 " title="edit">
+                                <a href="{{route('competition-registrations.edit',[$payment->competition_participant_id,$payment->id])}}" class="btn btn-outline-dark-blue btn-sm rounded me-2 " title="edit">
                                     <i class="fa fa-edit"></i>
                                 </a>
 
@@ -84,4 +87,5 @@
             @endif
         </x-card>
     </div>
+    </main>
 </x-admin>

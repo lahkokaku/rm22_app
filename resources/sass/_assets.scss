@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/storage/fonts/Lexend-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/storage/fonts/Roboto-Regular.ttf') format("truetype");
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-border {
+    background-color: #f175ad;
+    height: 4px;
+    width: 10%;
+}
+
+.nav-item,
+.c-button-1,
+.c-button-2{
+    font-family: 'Lexend' !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #274AA3;
+    color: white;
+}
+
+.nav-pills .nav-item .nav-link {
+    background-color: transparent;
+    color: #274AA3;
+    border: 1.2px solid #274AA3;
+    transition : 0.3s;
+}
+
+
+
+.nav-pills .nav-item:hover {
+    border: 2px solid white !important;
+    border-radius:12px;
+}
+
+ .btn {
+    border: 2px solid black;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Lexend' !important;
+  }
+
+   .action {
+    border: 3px solid pink !important;
+    color: #fff;
+
+
+  }
+
+    .action:hover  {
+    background-image: linear-gradient(#7FBCD2, #80679E) !important;
+    border: 0px none;
+    border-radius: 0px;
+  }
+
+
+  .btn-outline-1 {
+    color: #7FBCD2 !important;
+    border-color: #7FBCD2 !important;
+}
+
+
+.heading-primary {
+    background: linear-gradient(#3F3B74, $dark-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.heading-secondary {
+    background: linear-gradient(#7FBCD2, #F175AD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-dark-purple {
+    color: $dark-purple !important;
+}
+
+.btn-outline-dark-purple {
+    color: $dark-purple !important;
+    border-color: $dark-purple !important;
+    transition: .3s ease;
+
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-outline-dark-purple:hover {
+    color: #FFF !important;
+    background-color: $dark-purple !important;
+}

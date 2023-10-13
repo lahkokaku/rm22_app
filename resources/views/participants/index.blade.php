@@ -1,7 +1,11 @@
 <x-admin>
+    <x-navbar/>
+    <x-sidebar/>
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div class="container mt-4">
+        @foreach($competitions as $competition)
         <x-card>
-            <x-title>{{$competitions != NULL ? $competitions->name : 'All'}}'s Participants</x-title>
+            <x-title>{{$competition != NULL ? $competition->name : 'All'}}'s Participants</x-title>
             <hr>
             @if ($participants->count())
             <div class="table-responsive py-2">
@@ -18,6 +22,7 @@
                     </thead>
                     <tbody class="text-center">
                     @foreach ($participants as $participant)
+                    @if($participant->competition_id == $competition->id)
                          <tr>
                             <td>{{$participant->id}}</td>
                             <td>{{$participant->name}}</td>
@@ -27,13 +32,13 @@
                             <td class="d-flex justify-content-center"> 
                                  
 
-                                <a href="{{route('competition-registrations.edit',[$participant->id,$participant->competitionPayment->id])}}" class="btn btn-primary btn-sm rounded me-2 " title="edit">
+                                <a href="{{route('competition-registrations.edit',[$participant->id, $participant->id])}}" class="btn btn-outline-dark-blue btn-sm rounded me-2 " title="edit">
                                     <i class="fa fa-edit"></i>
                                 </a>
                                  
                             </td>
                          </tr>
-                        
+                    @endif
                     @endforeach
                     </tbody>
                 </table>
@@ -42,6 +47,7 @@
                 <hr><p class="text-center">No data</p>
             @endif
         </x-card>
+        @endforeach
     </div>
-
+    </main>
 </x-admin>

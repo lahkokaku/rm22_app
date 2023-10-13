@@ -36,7 +36,6 @@ class CompetitionController extends Controller
         //validate data 
         $this->validateRequest($request);
         Competition::create([
-            'created_by' => 'ADMIN',
             'name' => $request->name,
             'category' => $request->category,
             'price' => $request->price,
@@ -62,7 +61,6 @@ class CompetitionController extends Controller
         $this->validateRequest($request);
 
         $competition->update([
-            'created_by' => 'ADMIN',
             'name' => $request->name,
             'category' => $request->category,
             'price' => $request->price,

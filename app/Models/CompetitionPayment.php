@@ -12,4 +12,8 @@ class CompetitionPayment extends Model
     protected $primarykey = 'id';
     protected $timestamp = true;
     protected $guarded = [];
+
+    public function participant(){
+        return $this->belongsTo(CompetitionParticipant::class);
+    }
 }

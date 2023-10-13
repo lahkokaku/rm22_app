@@ -14,7 +14,7 @@ class CompetitionParticipant extends Model
     protected $guarded = [];
 
     public function competitionPayment(){
-        return $this->hasOne(CompetitionPayment::class,'competition_participant_id','id');
+        return $this->hasOne(CompetitionPayment::class,'id','competition_participant_id');
     }
 
     public function competition(){

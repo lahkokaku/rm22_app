@@ -8,13 +8,13 @@ use App\Models\CompetitionParticipant;
 
 class CompetitionParticipantController extends Controller
 {
-    public function index(Competition $competitionId = NULL){  
-        $participants= CompetitionParticipant::all();
-        if ($competitionId)$participants = CompetitionParticipant::where('competition_id',$competitionId->id)->get();
+    public function index(){  
+        $participants = CompetitionParticipant::all();
+        $competitions = Competition::all();
         
         return view('participants.index',[
             'participants' =>$participants,
-            'competitions' => $competitionId,
+            'competitions' => $competitions,
         ]);
     }
 
