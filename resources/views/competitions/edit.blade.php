@@ -1,4 +1,7 @@
 <x-admin>
+    <x-navbar />
+    <x-sidebar />
+    <main clas="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div class="container mt-3">
         <x-card>
             <x-title> Create New Competition </x-title>
@@ -33,6 +36,7 @@
               </form>
         </x-card>
     </div>
+    </main>
 </x-admin>
 
  

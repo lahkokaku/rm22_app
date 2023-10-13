@@ -2,7 +2,7 @@
     <div class="container-fluid" style="opacity: 100% !important;">
         <div class="d-inline-block">
             <a class="navbar-brand" href="/">
-                <img src="/storage/assets/AEO 2023White No Text.png" alt="aeo logo" width="100">
+                <img src="/storage/assets/NavbarIyoWhite.png" alt="aeo logo" width="100">
             </a>
             <a class=" toggle-wrapper rounded p-2" >
                 <span class="navbar-toggler-icon m-0 h5 " id="show-sidebar" style="cursor: pointer;"> </span>

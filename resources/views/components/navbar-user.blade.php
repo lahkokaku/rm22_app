@@ -3,7 +3,7 @@
     <div class="container-fluid ms-3" style="opacity: 100% !important;">
         <div class="d-inline-block">
             <a class="navbar-brand" href="/">
-                <img src="/storage/assets/AEO 2023White.png" alt="" width="100">
+                <img src="/storage/assets/NavbarIyoWhite.png" alt="" width="100">
             </a>
             <a class=" toggle-wrapper rounded p-2 text-white" >
                 {{-- <span class="navbar-toggler-icon m-0 h5 " id="show-sidebar" style="cursor: pointer;"> </span> --}}

@@ -1,5 +1,5 @@
 <x-user title="Competition Registration">
-
+    <x-navbar />
     <div class="container mt-4">
         <x-title> {{$competition->name}}'s Registration Fields</x-title>
         <hr>
@@ -60,4 +60,5 @@
             </x-card>
         </form>
     </div>
+    <x-footer />
 </x-user>

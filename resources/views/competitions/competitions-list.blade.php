@@ -1,19 +1,20 @@
 <x-user title="competition-list">
-    <div class="container mt-4">
+    <x-navbar></x-navbar>
+    <div class="container my-4">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <form action="{{route('competitions.show-competitions')}}">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search Here" name="search">
+                        <input type="text" class="form-control mx-2" placeholder="Search Here" name="search">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-info" type="submit">Search</button>
+                            <button class="btn btn-outline-dark-blue" type="submit">Search</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
 
-        <div class="row justify-content-between" style="box-sizing:border-box;">
+        <div class="row justify-content-evenly mt-2" style="box-sizing:border-box;">
             @foreach ($competitions as $competition)
             <div class="col-md-4">
                 <div class="card  p-0 border-0 shadow-sm position-relative " >
@@ -22,7 +23,7 @@
                         <p class="px-2" style="background-color:rgba(0,0,0,0.5);"> {{$competition->category}}</p>
                     </span>
 
-                    <img class=" w-100 border  img-fluid" src="https://aeo.mybnec.org/storage/assets/AEO%202023Colored.webp" >
+                    <img class=" w-100 border  img-fluid" src="https://aeo.mybnec.org/storage/competition_logo/logoSP.webp" >
                     <div class="card-body">
                         <h5 class="card-title">{{$competition->name}}</h5>
                         <p class="card-text">
@@ -32,7 +33,7 @@
                         <p class="card-text"><i class="fa-solid fa-location-dot"></i> {{$competition->place}}</p>
                         
                         <p class="card-text"><i class="fa-solid fa-money-bill"></i> IDR {{number_format($competition->price)}}</p>
-                        <a href="{{route('competition-registrations.create',$competition->id)}}" class="btn btn-primary">Register Now</a>
+                        <a href="{{route('competition-registrations.create',$competition->id)}}" class="btn btn-dark-blue">Register Now</a>
                     </div>
                 </div>
             </div>
@@ -40,4 +41,5 @@
         </div>
             
     </div>
+    <x-footer></x-footer>
 </x-user>

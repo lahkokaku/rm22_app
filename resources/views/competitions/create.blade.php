@@ -1,4 +1,8 @@
 <x-admin>
+    
+    <x-navbar />
+    <x-sidebar />
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" >
     <div class="container mt-3">
         <x-card>
             <x-title> Create New Competition </x-title>
@@ -28,7 +32,7 @@
 
                 <div class="row">
                     <div class="col">
-                        <x-buttonPrimary route="{{URL::previous()}}">Back</x-buttonPrimary>
+                        <x-buttonPrimary route="{{route('dashboards.index')}}">Back</x-buttonPrimary>
                     </div>
                     <div class="col">
                         <x-buttonSubmit>Submit</x-buttonSubmit>
@@ -37,6 +41,7 @@
               </form>
         </x-card>
     </div>
+    </main>
 </x-admin>
 
  

@@ -2,6 +2,29 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: 'Roboto', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+
+$primary-gradient-color: linear-gradient(to right, #32649e , #3f3b74, #4c3c5f);
+$secondary-gradient-color: linear-gradient(to right, #7fbcd2 , #80679e, #f175ad);
+
+// Color
+$light-green: #7FBCD2;
+$blue: #32649E;
+$indigo: #6574cd;
+$dark-purple: #3F3B74;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #DB1A2A;
+$orange: #FFAE00;
+$yellow: #ebd61e;
+$green: #10BA68;
+$teal: #7FBCD2;
+$cyan: #126CEA;
+$gray: #E9EDEF;
+
+$dark-blue: #274AA3;
+$light-blue: #9fcfe6;
+$dark-grey: #4b5355;

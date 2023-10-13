@@ -12,5 +12,7 @@ class Competition extends Model
     protected $primarykey = 'id';
     protected $timestamp = true;
     protected $guarded = [];
-    
+    public function competitionParticipant(){
+        return $this->hasMany(CompetitionParticipant::class, 'id', 'competition_id');
+    }
 }

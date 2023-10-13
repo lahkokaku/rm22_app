@@ -1,0 +1,112 @@
+#sidebar-admin,
+#sidebar-user {
+    font-family: "Lexend", Arial, Helvetica, sans-serif !important;
+   
+}
+
+.bg-gradient-blue {
+    background-image: linear-gradient(#32649e,#3f3b74,#4c3c5f);
+}
+
+.text-dark {
+    color: #000 !important;
+}
+
+// .border-gray {
+//     border-color: #c2c2c2 !important;
+// }
+
+.footer-wrapper .sidebar-wrapper,
+.page-wrapper .sidebar-wrapper,
+.sidebar-wrapper .sidebar-brand>a,
+.sidebar-wrapper .sidebar-dropdown>a:after,
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before,
+.sidebar-wrapper ul li a i,
+.footer-wrapper .footer-content,
+.page-wrapper .page-content,
+.sidebar-wrapper .sidebar-menu ul li a,
+#show-sidebar,
+#close-sidebar {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+}
+.page-wrapper.toggled .sidebar-wrapper {
+    left: 0rem;
+}
+
+@media screen and (min-width: 992px) {
+    .page-wrapper.toggled .page-content{
+        padding-left: 256px;
+    }
+
+    .footer-wrapper.toggled .footer-content{
+        padding-left: 256px;
+        transition: 0.2s;
+    }
+}
+
+.sidebar-content {
+    max-height: calc(100% - 40px);
+    height: calc(100% - 40px);
+    transition: 0.5s;
+}
+
+.sidebar-wrapper {
+    width: 16rem;
+    left: -16rem;
+    transition: 0.5s;
+
+}
+
+.sidebar-wrapper .sidebar-content .sidebar-brand #close-sidebar {
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.sidebar-dropdown a {
+    cursor: pointer;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-submenu {
+    display: none;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active>a i.fa-angle-right {
+    transform: rotate(90deg);
+    right: 0px;
+}
+
+.sidebar-wrapper ul li:hover,
+.sidebar-wrapper ul li:hover ,
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a > i,
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a > span
+{
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #7FBCD2;
+}
+
+.sidebar-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+}
+
+.sidebar-footer>a {
+    flex-grow: 1;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.side-item {
+    padding: 0.3rem 0.5rem;
+}
