@@ -23,7 +23,7 @@
                         <p class="px-2" style="background-color:rgba(0,0,0,0.5);"> {{$competition->category}}</p>
                     </span>
 
-                    <img class=" w-100 border  img-fluid" src="https://aeo.mybnec.org/storage/assets/AEO%202023Colored.webp" >
+                    <img class=" w-100 border  img-fluid" src="https://aeo.mybnec.org/storage/competition_logo/logoSP.webp" >
                     <div class="card-body">
                         <h5 class="card-title">{{$competition->name}}</h5>
                         <p class="card-text">
